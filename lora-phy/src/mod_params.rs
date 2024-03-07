@@ -89,6 +89,7 @@ pub struct ModulationParams {
     pub(crate) frequency_in_hz: u32,
 }
 
+#[derive(Clone)]
 /// Packet parameters for a send or receive communication channel
 pub struct PacketParams {
     pub(crate) preamble_length: u16,  // number of LoRa symbols in the preamble
